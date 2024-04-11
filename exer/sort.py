@@ -31,7 +31,7 @@ def bubble_sort(list):
             if list[jfor] > list[jfor + 1]:
                 list[jfor], list[jfor + 1] = list[jfor + 1], list[jfor]
 
-               # time.sleep(0.005)
+                time.sleep(0.005)
                 clear_screen()
                 for ifor in list:
                     print(ifor, "x" * ifor)
@@ -47,5 +47,15 @@ print(list)
 
 etime = time.time()
 
-print(stime)
-print(etime - stime)
+# print(stime)
+# print(etime - stime)
+
+
+
+
+
+
+
+
+
+

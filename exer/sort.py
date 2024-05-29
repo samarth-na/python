@@ -7,21 +7,24 @@ def clear_screen():
     os.system("clear")
 
 
-n = input("no of arrays = ")
-n = int(n)
-while n > 46:
-    n = input("no of elemets must be below 47 = ")
-    n = int(n)
+numberOfArray = input("no of arrays = ")
+numberOfArray = int(numberOfArray)
+# while numberOfArray > 46:
+#     numberOfArray = input("no of elemets must be below 47 = ")
+#     numberOfArray = int(numberOfArray)
 
-s = input("range of number in array = ")
-s = int(s)
-while s > 190:
-    s = input("range must be below 191 = ")
-    s = int(s)
+
+rangeOfNumber = input("range of number in array = ")
+rangeOfNumber = int(rangeOfNumber)
+
+# while rangeOfNumber > 190:
+#     rangeOfNumber = input("range must be below 191 = ")
+#     rangeOfNumber = int(rangeOfNumber)
 
 
 stime = time.time()
-list = [random.randint(1, s) for _ in range(n)]
+
+list = [random.randint(1, rangeOfNumber) for _ in range(numberOfArray)]
 
 
 def bubble_sort(list):
@@ -39,23 +42,4 @@ def bubble_sort(list):
 
 
 bubble_sort(list)
-
-clear_screen()
-for i in list:
-    print(i, "x" * i)
-print(list)
-
-etime = time.time()
-
-# print(stime)
-# print(etime - stime)
-
-
-
-
-
-
-
-
-
 

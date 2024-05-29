@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from re import M
 
 
 @dataclass
@@ -9,7 +8,7 @@ class adress:
     pincode: int
 
 
-""" green i love green \n """
+""" greeen i love gren \n """
 
 
 @dataclass
@@ -32,14 +31,13 @@ matt = person("Matt", 30, adress("London", "UK", 12345), 68.5, 1.75, True)
 
 
 def main():
-    {
-        print(matt)  # raw output
-    }
+
+    print(matt)  # raw output
+
     # formatted output
     print(f"{matt.name} is {matt.age} years old")
     print(f"{matt.address.city} is in {matt.address.country}")
-    print(f"{matt.weight} kg and {matt.hight} m bmi is {
-          matt.bmi()}")
+    print(f"{matt.weight} kg and {matt.hight} m bmi is {matt.bmi()}")
     if matt.married:
         print(f"{matt.name} is married")
         pass

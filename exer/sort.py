@@ -14,17 +14,17 @@ numberOfArray = int(numberOfArray)
 #     numberOfArray = int(numberOfArray)
 
 
-rangeOfNumber = input("range of number in array = ")
-rangeOfNumber = int(rangeOfNumber)
+rangeOfNumbers = input("range of number in array = ")
+rangeOfNumbers = int(rangeOfNumbers)
 
-# while rangeOfNumber > 190:
-#     rangeOfNumber = input("range must be below 191 = ")
-#     rangeOfNumber = int(rangeOfNumber)
+# while rangeOfNumbers > 190:
+#     rangeOfNumbers = input("range must be below 191 = ")
+#     rangeOfNumbers = int(rangeOfNumbers)
 
 
 stime = time.time()
 
-list = [random.randint(1, rangeOfNumber) for _ in range(numberOfArray)]
+list = [random.randint(1, rangeOfNumbers) for _ in range(numberOfArray)]
 
 
 def bubble_sort(list):
@@ -34,7 +34,7 @@ def bubble_sort(list):
             if list[jfor] > list[jfor + 1]:
                 list[jfor], list[jfor + 1] = list[jfor + 1], list[jfor]
 
-                time.sleep(0.005)
+                time.sleep(0.01)
                 clear_screen()
                 for ifor in list:
                     print(ifor, "x" * ifor)
@@ -42,4 +42,3 @@ def bubble_sort(list):
 
 
 bubble_sort(list)
-

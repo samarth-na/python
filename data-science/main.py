@@ -3,7 +3,12 @@ output_file_path = "data/csv/E-commerse-customer-data-modified.csv"
 
 # Open the input file for reading
 with open(input_file_path, "r") as input_file:
+
     # Open the output file for writing
+    # with open(output_file_path, "w") as output_file:
+    #
+    #     # Read the header line and write it to the output FileExistsError
+
     with open(output_file_path, "w") as output_file:
         # Read the header line and write it to the output file
         header = input_file.readline().strip()

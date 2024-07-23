@@ -3,7 +3,6 @@ output_file_path = "data/csv/E-commerse-customer-data-modified.csv"
 
 # Open the input file for reading
 with open(input_file_path, "r") as input_file:
-
     # Open the output file for writing
     # with open(output_file_path, "w") as output_file:
     #

@@ -52,7 +52,20 @@ print("")
 for i in range(10):
     print(i, "j")
 
-for i in range(10, 2, -1):
+print("")
+
+for i in range(2, 10):
     print(i, "j")
 
+print("")
+
+for i in range(3, 31, 3):
+    print(f"3 *  {int(i / 3)} = {i} ")
+
+
 # function
+def name():
+    print("oju")
+
+
+name()

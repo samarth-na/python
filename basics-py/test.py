@@ -1,6 +1,7 @@
 # variable
 name = 2
 two = 2
+
 print(name)
 varads = name % two
 print(varads)

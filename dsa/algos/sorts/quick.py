@@ -30,6 +30,7 @@ def quick_sort(arr):
     return quick_sort(less) + equal + quick_sort(greater)
 
 
+
 # print(quick_sort(arr))
 
 
@@ -40,6 +41,7 @@ def quick_sort2(array):
     print(array)
     pivot = array[-1]  # Select the last element as the pivot
     print(f"Pivot: {pivot}")
+
     less = []
     greater = []
 
@@ -49,9 +51,7 @@ def quick_sort2(array):
         if value > pivot:
             greater.append(value)
 
-    # Debugging print statements
-
-    return quick_sort2(less) + [pivot] + quick_sort2(greater)
+        return quick_sort2(less) + [pivot] + quick_sort2(greater)
 
 
 # Example usage:

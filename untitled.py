@@ -1,10 +1,22 @@
-from subprocess import PIPE, Popen
+example_string = "qw\ter\tty\tui"
+example_list = ["qw", "er", "ty", "ui"]
+example_tuple = ("qw", "er", "ty", "ui")
+example_dict = {"qw": "er", "ty": "ui"}
 
-name = "as"
-args = ["-c", "import os; print(os.environ['FOO'])"]
-print(args)
 
-p = Popen(args, stdout=PIPE, stderr=PIPE)
-out, err = p.communicate()
-print(out)
-print(err)
+def string_methods():
+    print(example_string.endswith("8,9"))
+    print(example_string.expandtabs(1))
+    print(example_string.expandtabs(2))
+    print(example_string.expandtabs(3))
+    print(example_string.expandtabs(4))
+
+
+def main():
+    string_methods()
+
+
+##########################
+
+if __name__ == "__main__":
+    main()

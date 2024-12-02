@@ -1,4 +1,5 @@
 input_file_path = "data/csv/E-commerse-customer-data.csv"
+
 output_file_path = "data/csv/E-commerse-customer-data-modified.csv"
 
 # Open the input file for reading

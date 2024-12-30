@@ -1,10 +1,10 @@
-import time
-import random
 import os
+import random
+import time
 
 
 def clear_screen():
-    os.system("clear")
+    _ = os.system("clear")
 
 
 numberOfArray = input("no of arrays = ")

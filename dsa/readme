@@ -1,0 +1,10 @@
+
+low = 0
+high = arr.length -1
+while arr[low] <= arr[high]
+mid = (low + high) // 2
+if arr[mid] == target
+return mid
+else if arr[mid] <
+low = mid + 1
+else return high = mid- 1

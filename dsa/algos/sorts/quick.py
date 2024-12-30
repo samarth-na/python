@@ -1,7 +1,7 @@
 arr = [4, 3, 1, 7, 6, 2, 7, 4, 4, 6, 7, 5, 4, 2, 5, 6, 7, 3, 2, 1, 9]
 
 
-def quick_sort(arr):
+def qquick_sort(arr):
     # Base case
     if len(arr) < 2:
         return arr
@@ -30,17 +30,13 @@ def quick_sort(arr):
     return quick_sort(less) + equal + quick_sort(greater)
 
 
-
 # print(quick_sort(arr))
 
 
-def quick_sort2(array):
-    if len(array) < 2:
-        return array
+def quick_sort(array):
+    return array if len(array) < 2 else None
 
-    print(array)
     pivot = array[-1]  # Select the last element as the pivot
-    print(f"Pivot: {pivot}")
 
     less = []
     greater = []
@@ -51,11 +47,11 @@ def quick_sort2(array):
         if value > pivot:
             greater.append(value)
 
-        return quick_sort2(less) + [pivot] + quick_sort2(greater)
+        return quick_sort(less) + [pivot] + quick_sort(greater)
 
 
 # Example usage:
 arr = [3, 6, 8, 10, 1, 2, 1]
-sorted_arr = quick_sort2(arr)
+sorted_arr = quick_sort(arr)
 
 print(f"Sorted array: {sorted_arr}")

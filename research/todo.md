@@ -1,0 +1,1 @@
+    print(f"Pivot: {pivot}")

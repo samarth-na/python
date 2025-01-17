@@ -33,7 +33,17 @@ def qquick_sort(arr):
 # print(quick_sort(arr))
 
 
-def quick_sort(array):
+def quick_sort_shortest(array) -> list:
+    return (
+        array
+        if len(array) < 2
+        else quick_sort_shortest([x for x in array[1:] if x <= array[0]])
+        + [array[0]]
+        + quick_sort_shortest([x for x in array[1:] if x > array[0]])
+    )
+
+
+def quick_sort(array) -> list | None:
     return array if len(array) < 2 else None
 
     pivot = array[-1]  # Select the last element as the pivot
@@ -44,14 +54,38 @@ def quick_sort(array):
     for value in array:
         if value < pivot:
             less.append(value)
+
         if value > pivot:
             greater.append(value)
 
         return quick_sort(less) + [pivot] + quick_sort(greater)
 
 
-# Example usage:
-arr = [3, 6, 8, 10, 1, 2, 1]
-sorted_arr = quick_sort(arr)
+def bsearch(array) -> list | None:
+    return array if len(array) < 2 else None
 
-print(f"Sorted array: {sorted_arr}")
+    pivot = array[-1]  # Select the last element as the pivot
+
+    less = []
+    greater = []
+
+    for value in array:
+        if value < pivot:
+            less.append(value)
+
+        if value > pivot:
+            greater.append(value)
+
+        return quick_sort(less) + [pivot] + quick_sort(greater)
+
+
+def main():
+    arr = [3, 6, 8, 10, 1, 2, 1]
+    print(f"Unsorted array: {arr}")
+    sorted_arr = quick_sort_shortest(arr)
+
+    print(f"Sorted  array : {sorted_arr}")
+
+
+if __name__ == "__main__":
+    main()

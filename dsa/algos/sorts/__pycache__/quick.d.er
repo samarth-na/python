@@ -1,0 +1,10 @@
+##[pylyzer] failed /home/samarth/projects/python/dsa/algos/sorts/quick.py 1737049502 1686
+.arr: global::List!({2, 5, 1, 4, 7, 3, 6, 9}, 21)
+.qquick_sort: |Type_49322 <: Structural({.__len__ = (self: Never) -> Nat; .__getitem__ = (self: Obj, ?O) -> ?T}), T: Type, O: Type|(arr: Type_49322) -> O
+.quick_sort_shortest: |T :> global::List!(?T, _: Nat), T <: Structural({.__len__ = (self: Never) -> Nat; .__getitem__ = (self: Obj, ?49401) -> ?R and (self: Obj, ?49404) -> ?49405}), Type_49404: Type, T <: Structural({.__le__ = (self: Never, ?R) -> Bool; .__gt__ = (self: Never, ?R) -> Bool}), Type_49401: Type, R: Type, Type_49405: Type|(array: T) -> global::GenericList
+.quick_sort: (array: global::List!(Structural({.__lt__ = (self: Never, Obj) -> Bool; .__gt__ = (self: Never, Obj) -> Bool}), 1)) -> global::GenericList or NoneType
+.main: () -> NoneType
+
+l::List!({10, 2, 8, 6, 3, 1}, 7)
+.sorted_arr: Never
+

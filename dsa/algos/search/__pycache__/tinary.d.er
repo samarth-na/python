@@ -1,0 +1,7 @@
+##[pylyzer] failed /home/samarth/projects/python/dsa/algos/search/tinary.py 1738777924 912
+.___v_desugar_1 = pyimport "<failure>"
+.<failure> = pyimport "<failure>"
+.List: Never
+.tinary: (arr: global::List!(Int, _: Nat), target: Int, left: Int, right: Int) -> Int
+ -> Int
+.binary_iterative: (arr: global::List!(Int, _: Nat), target: Int) -> Int

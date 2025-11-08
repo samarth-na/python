@@ -1,18 +1,18 @@
 def fib1(n: int) -> int:
-    if n <= 1:
+    if n < 2:
         return n
     else:
-        return fib1(n-1) + fib1(n-2)
+        return fib1(n - 1) + fib1(n - 2)
 
 
-ress = [fib1(i) for i in range(10)]
-print(ress)
+def fibshorted(n):
+    return n if n < 2 else n + fibshorted(n - 1)
 
 
-def fib2(nn: int):
+def fib2(n: int):
     a, b = 0, 1
-    for _ in range(nn):
-        print(a, end=' ')
+    for _ in range(n):
+        print(a, end=" ")
 
         c = a + b
         a = b

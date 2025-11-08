@@ -2,6 +2,7 @@ arr = [4, 3, 1, 7, 6, 2, 7, 4, 4, 6, 7, 5, 4, 2, 5, 6, 7, 3, 2, 1, 9]
 
 
 def qquick_sort(arr):
+
     # Base case
     if len(arr) < 2:
         return arr
@@ -33,13 +34,13 @@ def qquick_sort(arr):
 # print(quick_sort(arr))
 
 
-def quick_sort_shortest(array) -> list:
+def qSortShort(array) -> list:
     return (
         array
         if len(array) < 2
-        else quick_sort_shortest([x for x in array[1:] if x <= array[0]])
+        else qSortShort([x for x in array[1:] if x <= array[0]])
         + [array[0]]
-        + quick_sort_shortest([x for x in array[1:] if x > array[0]])
+        + qSortShort([x for x in array[1:] if x > array[0]])
     )
 
 
@@ -82,7 +83,7 @@ def bsearch(array) -> list | None:
 def main():
     arr = [3, 6, 8, 10, 1, 2, 1]
     print(f"Unsorted array: {arr}")
-    sorted_arr = quick_sort_shortest(arr)
+    sorted_arr = qSortShort(arr)
 
     print(f"Sorted  array : {sorted_arr}")
 
